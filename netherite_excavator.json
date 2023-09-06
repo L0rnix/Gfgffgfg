@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_shovel",
+      "nbt": "{CustomModelData: 70002}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.netherite_excavator.title",
+      "fallback": "Template Title"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.netherite_excavator.description",
+      "fallback": "Template Description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "hephaestools:custom_tool/diamond_excavator",
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_shovel"
+            ],
+            "nbt": "{CustomModelData: 70002}"
+          }
+        ]
+      }
+    }
+  }
+}

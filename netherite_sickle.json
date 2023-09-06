@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData: 70006}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.netherite_sickle.title",
+      "fallback": "Template Title"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.netherite_sickle.description",
+      "fallback": "Now you're harvesting 5x5!"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "hephaestools:custom_tool/diamond_sickle",
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:warped_fungus_on_a_stick"
+            ],
+            "nbt": "{CustomModelData: 70006}"
+          }
+        ]
+      }
+    }
+  }
+}

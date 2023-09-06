@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_axe",
+      "nbt": "{CustomModelData: 70001}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.netherite_lumberjack.title",
+      "fallback": "Template Title"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.netherite_lumberjack.description",
+      "fallback": "In the offhand, you can also take a hoe. Do you know what you're doing?"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "hephaestools:custom_tool/diamond_lumberjack",
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_axe"
+            ],
+            "nbt": "{CustomModelData: 70001}"
+          }
+        ]
+      }
+    }
+  }
+}

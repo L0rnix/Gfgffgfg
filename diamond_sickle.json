@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData: 70005}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.diamond_sickle.title",
+      "fallback": "Template Title"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.diamond_sickle.description",
+      "fallback": "Now you're harvesting 3x3!"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "hephaestools:custom_tool/sickle",
+  "criteria": {
+    "diamond_sickle": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "hephaestools:trigger/diamond_sickle"
+      }
+    }
+  }
+}

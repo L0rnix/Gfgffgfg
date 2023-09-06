@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_pickaxe",
+      "nbt": "{CustomModelData: 70002}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.diamond_vein_miner.title",
+      "fallback": "Template Title"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.diamond_vein_miner.description",
+      "fallback": "Template Description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "hephaestools:custom_tool/vein_miner",
+  "criteria": {
+    "diamond_vein_miner": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "hephaestools:trigger/diamond_vein_miner"
+      }
+    }
+  }
+}

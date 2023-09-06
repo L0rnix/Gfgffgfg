@@ -1,0 +1,81 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:smithing_table"
+        },
+        "title": {
+            "translate": "hephaestools.advancement.custom_tool.title",
+            "fallback": "New Toolkit!"
+        },
+        "description": {
+            "translate": "hephaestools.advancement.custom_tool.description",
+            "fallback": "Create some new cool tool!"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "hephaestools:root",
+    "criteria": {
+        "sickle": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{type: 'sickle'}"
+                    }
+                ]
+            }
+        },
+        "vein_miner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{type: 'vein_miner'}"
+                    }
+                ]
+            }
+        },
+        "excavator": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{type: 'excavator'}"
+                    }
+                ]
+            }
+        },
+        "hammer": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{type: 'hammer'}"
+                    }
+                ]
+            }
+        },
+        "lumberjack": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{type: 'lumberjack'}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "lumberjack",
+            "hammer",
+            "excavator",
+            "sickle",
+            "vein_miner"
+        ]
+    ]
+}

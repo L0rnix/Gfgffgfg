@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_shovel",
+      "nbt": "{CustomModelData: 70002}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.excavator.title",
+      "fallback": "Meet, Excavator!"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.excavator.description",
+      "fallback": "Like a shovel, but digs 3x3!"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "hephaestools:custom_tool/custom_tool",
+  "criteria": {
+    "excavator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{type: 'excavator'}"
+          }
+        ]
+      }
+    }
+  }
+}

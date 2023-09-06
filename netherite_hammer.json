@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_pickaxe",
+      "nbt": "{CustomModelData: 70001}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.netherite_hammer.title",
+      "fallback": "Template Title"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.netherite_hammer.description",
+      "fallback": "Template Description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "hephaestools:custom_tool/diamond_hammer",
+  "criteria": {
+    "netherite_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "nbt": "{CustomModelData: 70001}"
+          }
+        ]
+      }
+    }
+  }
+}

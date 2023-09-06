@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_pickaxe",
+      "nbt": "{CustomModelData: 70001}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.diamond_hammer.title",
+      "fallback": "Template Title"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.diamond_hammer.description",
+      "fallback": "Template Description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "hephaestools:custom_tool/hammer",
+  "criteria": {
+    "diamond_hammer": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "hephaestools:trigger/diamond_hammer"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_pickaxe",
+      "nbt": "{CustomModelData: 70002}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.vein_miner.title",
+      "fallback": "Meet, Vein Miner!"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.vein_miner.description",
+      "fallback": "Mines an entire ore vein!"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "hephaestools:custom_tool/custom_tool",
+  "criteria": {
+    "vein_miner": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{type: 'vein_miner'}"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_shovel",
+      "nbt": "{CustomModelData: 70002}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.diamond_excavator.title",
+      "fallback": "Template Title"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.diamond_excavator.description",
+      "fallback": "Template Description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "hephaestools:custom_tool/excavator",
+  "criteria": {
+    "diamond_excavator": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "hephaestools:trigger/diamond_excavator"
+      }
+    }
+  }
+}

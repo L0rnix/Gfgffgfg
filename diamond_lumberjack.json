@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_axe",
+      "nbt": "{CustomModelData: 70001}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.diamond_lumberjack.title",
+      "fallback": "Template Title"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.diamond_lumberjack.description",
+      "fallback": "Need leaves? Take offhand shears!"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "hephaestools:custom_tool/lumberjack",
+  "criteria": {
+    "diamond_lumberjack": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "hephaestools:trigger/diamond_lumberjack"
+      }
+    }
+  }
+}

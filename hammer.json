@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_pickaxe",
+      "nbt": "{CustomModelData: 70001}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.hammer.title",
+      "fallback": "Meet, Hammer!"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.hammer.description",
+      "fallback": "Like a pickaxe, but mines 3x3!"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "hephaestools:custom_tool/custom_tool",
+  "criteria": {
+    "hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{type: 'hammer'}"
+          }
+        ]
+      }
+    }
+  }
+}

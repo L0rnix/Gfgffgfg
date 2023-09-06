@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_axe",
+      "nbt": "{CustomModelData: 70001}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.lumberjack.title",
+      "fallback": "Meet, Lumberjack Axe!"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.lumberjack.description",
+      "fallback": "Cuts down a whole tree!"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "hephaestools:custom_tool/custom_tool",
+  "criteria": {
+    "lumberjack": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{type: 'lumberjack'}"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData: 70004}"
+    },
+    "title": {
+      "translate": "hephaestools.advancement.sickle.title",
+      "fallback": "Meet, Sickle!"
+    },
+    "description": {
+      "translate": "hephaestools.advancement.sickle.description",
+      "fallback": "Harvests crops by right click and replants seeds!"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "hephaestools:custom_tool/custom_tool",
+  "criteria": {
+    "sickle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{type: 'sickle'}"
+          }
+        ]
+      }
+    }
+  }
+}
